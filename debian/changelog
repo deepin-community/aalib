@@ -1,11 +1,19 @@
-aalib (1.4p5-50deepin1) unstable; urgency=medium
+aalib (1.4p5-51.1) unstable; urgency=medium
 
-  * Fix FTBFS with ncurses 6.x: aacurses.c accessed the private
-    _maxx/_maxy members of the opaque WINDOW struct; switch to the
-    public getmaxx()/getmaxy() accessors (which already return
-    max + 1, preserving the previous "_maxx + 1" semantics).
+  * Non-maintainer upload.
+  * Fix FTBFS with -Werror=implicit-function-declaration (Closes: #1066351).
 
- -- jiabowen <jiabowen@uniontech.com>  Mon, 06 Jul 2026 11:14:55 +0800
+ -- Andrey Rakhmatullin <wrar@debian.org>  Wed, 13 Mar 2024 22:25:58 +0500
+
+aalib (1.4p5-51) unstable; urgency=medium
+
+  * Accept MR: Fix Netscape typo
+    - https://salsa.debian.org/debian/aalib/-/merge_requests/2
+  * Accept patch to fix ftbfs (Closes: #1057381):
+    - https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1057381
+  * Update standards version to 4.6.2
+
+ -- Jonathan Carter <jcc@debian.org>  Thu, 25 Jan 2024 17:07:26 +0200
 
 aalib (1.4p5-50) unstable; urgency=medium
 
