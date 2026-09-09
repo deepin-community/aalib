@@ -12,4 +12,6 @@
 0011-Fix-TexInfo-error.patch
 0012-aalinuxkbd-Always-return-with-a-value.patch
 fix-wording
-fix-opaque-ncurses-window.patch
+fix-netscape-typo
+fix-ftbfs-incomplete-typedef
+fix-implicit-function-declaration.patch
